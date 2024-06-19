@@ -85,17 +85,17 @@ As a Customer, I can
 
 * Update user information : secured, only authorized admin and user himself and access it - PUT
 ```text
-/api/user/update/{id}
+/api/user/update/{user_id}
 ```
 
 * Update user role : only authorized admin can access it - PUT
 ```text
-/api/user/update/role/{id}
+/api/user/update/role/{user_id}
 ```
 
 * Delete a user : secured, only authorized admin and user himself and access it - DELETE
 ```text
-/api/user/delete/{id}
+/api/user/delete/{user_id}
 ```
 
 * Get all category - all visitors can access it - GET
@@ -110,12 +110,12 @@ As a Customer, I can
 
 * Update category : only admin can access it - PUT
 ```text
-/api/category/update/{id}
+/api/category/update/{category_id}
 ```
 
 * Delete category : only admin can access it - DELETE
 ```text
-/api/category/delete/{id}
+/api/category/delete/{category_id}
 ```
 
 * Get all product List - all visitors can access it, it will have pagination - GET
@@ -135,7 +135,7 @@ As a Customer, I can
 
 * Get product Details - all visitors can access it - GET
 ```text
-/api/product/details/{id}
+/api/product/details/{product_id}
 ```
 
 * Add new product : only authorized admin can access it - POST
@@ -145,17 +145,26 @@ As a Customer, I can
 
 * Update product : only authorized admin can access it - PUT
 ```text
-/api/product/update/{id}
+/api/product/update/{product_id}
 ```
 
 * Delete product : only authorized admin can access it - DELETE
 ```text
-/api/product/delete/{id}
+/api/product/delete/{product_id}
 ```
 
 * Purchase product : only authorized users can buy product - POST
 ```text
 /api/product/purchase
+```
+
+* Get all order list : only admin can access it
+```text
+/api/order/all
+```
+* Get order details : only admin and user himself can access it
+```text
+/api/order/details/{order_id}
 ```
 
 * Show order History : only admin or user himself can access it,it will have pagination - GET
@@ -170,7 +179,7 @@ As a Customer, I can
 
 * Update order status : only authorized admin can do it - PUT
 ```text
-/api/order/update-status
+/api/order/update-status/{order_id}
 ```
 
 
