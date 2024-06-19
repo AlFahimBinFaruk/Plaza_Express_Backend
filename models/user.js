@@ -8,9 +8,8 @@ const { v4: uuidv4 } = require('uuid');
 const User = sequelize.define("users", {
     user_id: {
         type: DataTypes.STRING,
-        
-        primaryKey:true,
-        defaultValue:uuidv4
+        primaryKey: true,
+        defaultValue: uuidv4
     },
     first_name: {
         type: DataTypes.STRING,
@@ -42,9 +41,9 @@ const User = sequelize.define("users", {
     }
 
 },
-{
-    timestamps:true
-});
+    {
+        timestamps: true//will automatically handle createdAt,updatedAt.
+    });
 
 
 module.exports = User;
