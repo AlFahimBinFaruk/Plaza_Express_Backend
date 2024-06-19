@@ -80,7 +80,7 @@ As a Customer, I can
 
 * Get individual user details : secured, only authorized admin and user himself and access it - GET
 ```text
-/api/user/{id}
+/api/user/details/{user_id}
 ```
 
 * Update user information : secured, only authorized admin and user himself and access it - PUT

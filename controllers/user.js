@@ -78,7 +78,7 @@ const loginUser = async (req, res) => {
 
 }
 
-// only admin and user himself can use these feature
+// only admin can use these feature
 const getUserDetails = async (req, res) => {
 
     const user_id = req.params.user_id;
